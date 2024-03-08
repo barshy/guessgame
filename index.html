@@ -5,25 +5,31 @@
   <link rel="stylesheet" type="text/css" href="abc123.css">
 </head>
 <body>
-  <h1>Guessing the Number Game</h1>
-  <p>Select a range and start the game:</p>
-  <div class="range-options">
-    <input type="radio" id="range10" name="range" value="10">
-    <label for="range10">1 to 10</label>
-    <input type="radio" id="range100" name="range" value="100">
-    <label for="range100">1 to 100</label>
-    <input type="radio" id="range1000" name="range" value="1000">
-    <label for="range1000">1 to 1000</label>
-  </div>
-  <button id="startBtn" disabled>Start</button>
-  
-  <div id="gameArea" style="display: none;">
-    <p id="instruction"></p>
-    <input type="number" id="guessInput">
-    <button id="checkBtn">Check</button>
-    <p id="guessesLeft"></p>
-    <h3>Guesses:</h3>
-    <ul id="guessList"></ul>
+  <div class="container">
+    <h1>Guessing the number game</h1>
+    <div class="range-section">
+      <p>Select a range of numbers</p>
+      <div class="range-options">
+        <label><input type="radio" name="range" value="10"> 10</label>
+        <label><input type="radio" name="range" value="100"> 100</label>
+        <label><input type="radio" name="range" value="1000"> 1000</label>
+      </div>
+      <button id="startBtn" disabled>Start</button>
+    </div>
+    
+    <div id="gameArea" class="game-section" style="display: none;">
+      <h2>Guessing the number game</h2>
+      <p id="instruction"></p>
+      <div class="input-section">
+        <input type="number" id="guessInput" placeholder="Enter a number">
+        <button id="checkBtn">Check</button>
+      </div>
+      <p id="guessesLeft"></p>
+      <div class="guesses-section">
+        <h3>Guessing record:</h3>
+        <ul id="guessList"></ul>
+      </div>
+    </div>
   </div>
 
   <script src="abc123.js"></script>
