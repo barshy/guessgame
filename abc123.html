@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guessing the Number Game</title>
+  <link rel="stylesheet" type="text/css" href="abc123.css">
+</head>
+<body>
+  <h1>Guessing the Number Game</h1>
+  <p>Select a range and start the game:</p>
+  <div class="range-options">
+    <input type="radio" id="range10" name="range" value="10">
+    <label for="range10">1 to 10</label>
+    <input type="radio" id="range100" name="range" value="100">
+    <label for="range100">1 to 100</label>
+    <input type="radio" id="range1000" name="range" value="1000">
+    <label for="range1000">1 to 1000</label>
+  </div>
+  <button id="startBtn" disabled>Start</button>
+  
+  <div id="gameArea" style="display: none;">
+    <p id="instruction"></p>
+    <input type="number" id="guessInput">
+    <button id="checkBtn">Check</button>
+    <p id="guessesLeft"></p>
+    <h3>Guesses:</h3>
+    <ul id="guessList"></ul>
+  </div>
+
+  <script src="abc123.js"></script>
+</body>
+</html>
